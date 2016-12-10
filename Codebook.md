@@ -7,7 +7,9 @@ The original dataset is available at: https://d396qusza40orc.cloudfront.net/getd
 smartphones_means shows the mean of a series of measurements for each subject carrying out a given activity.  
 
 Variables: 
+
 subject - Identifier of subject who carried out the experiment
+
 activity - Activity the subject performed
 
 The following measurement variables are structured as follows:
@@ -78,8 +80,10 @@ fBodyGyrostdZ
 fBodyAccMagmean         
 fBodyAccMagstd          
 fBodyBodyAccJerkMagmean 
-fBodyBodyAccJerkMagstd  
-fBodyBodyGyroMagmean    
-fBodyBodyGyroMagstd     
+
+fBodyBodyAccJerkMagstd 
+fBodyBodyGyroMagmean
+fBodyBodyGyroMagstd    
 fBodyBodyGyroJerkMagmean
-fBodyBodyGyroJerkMagstd 
+
+fBodyBodyGyroJerkMagstd
