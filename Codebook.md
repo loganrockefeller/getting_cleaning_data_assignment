@@ -80,10 +80,8 @@ fBodyGyrostdZ
 fBodyAccMagmean         
 fBodyAccMagstd          
 fBodyBodyAccJerkMagmean 
-
 fBodyBodyAccJerkMagstd 
 fBodyBodyGyroMagmean
 fBodyBodyGyroMagstd    
 fBodyBodyGyroJerkMagmean
-
 fBodyBodyGyroJerkMagstd
