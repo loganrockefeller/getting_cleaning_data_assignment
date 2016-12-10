@@ -1,7 +1,18 @@
-# getting_cleaning_data_assignment
 Final assignment for Getting and Cleaning Data Coursera course 
 
+The code in analysis.R uses data downloaded from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.  It assumes that the data has been downloaded and the zipped file is in the working directory. Further details about the original data are available in the README.txt and features_info.txt files that come in the original zip file. 
 
-The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+analysis.R does the following:
 
-The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+1) Unzips and reads in all the relevant files
+2) Labels the variables (columns) in the testing and training datasets using the "features" data
+3) For both the testing and training dataset, combines measurement data with subject and activity data
+4) Combines the testing and training data into one dataset for all subjects
+5) Labels the activity and subject columns
+6) Extracts only column names for subject, activity, and measurements of mean and standard deviation, excluding the the "meanFreq" variables
+7) Saves a new dataset with only the columns identified in the above step
+8) Cleans up the variable names by removing uneccesary symbols. (While the assignment calls for descriptive variable names, I kept the abbreviations because otherwise the variable names would have been extremely long, and I thought the abbreviations were sufficiently descriptive.)
+9) Replaces the numbers in the activity column with descriptive names
+10) Moves the subject and activity columns to the first columns
+11) Saves a new dataset with the mean of each measurement for each subject and activity
+12) Exports the dataset 
